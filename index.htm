@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vatukah's Stop-Watch</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://kit.fontawesome.com/8a047c8031.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="rotator">
+      <input type="range" name="x_axis" id="xAxis" max="360" value="0" />
+      <input type="range" name="y_axis" id="yAxis" max="360" value="0" />
+    </div>
+    <div id="watchContainer">
+      <div id="watch">
+        <div id="top"></div>
+        <div id="left"></div>
+        <div id="screen">
+          <p>STOP-WATCH</p>
+          <p id="timeSec">
+            <span id="min" name="min">00</span>:<span id="sec" name="sec">00</span>:<span id="msec" name="mSec"
+              >00</span
+            >
+          </p>
+        </div>
+        <div id="btnSec">
+          <button id="play" class="btn" name="play"><i class="fa-solid fa-play"></i></button>
+          <button id="R_S" class="btn" name="stop"><i class="fa-solid fa-stop"></i></button>
+        </div>
+        <div id="right"></div>
+        <div id="bottom"></div>
+      </div>
+    </div>
+    <div id="picker">
+        <input type="color" name="colorPicker" id="color">
+        <button id="set">Set</button>
+        <button id="setAsDef">Set As Default</button>
+    </div>
+  </body>
+  <script src="index.js" defer></script>
+</html>
